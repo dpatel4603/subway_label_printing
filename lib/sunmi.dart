@@ -70,7 +70,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 7));
     await initialize();
     await printText("GARLIC AIOLI");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -88,7 +88,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 7));
     await initialize();
     await printText("PEPPERCORN RANCH");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -107,7 +107,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 7));
     await initialize();
     await printText("KETCHUP");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -125,7 +125,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 7));
     await initialize();
     await printText("SWE ONI TERYK");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -143,7 +143,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 7));
     await initialize();
     await printText("MUSTARD");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -161,7 +161,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 7));
     await initialize();
     await printText("HNY MUSTARD");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -179,7 +179,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 7));
     await initialize();
     await printText("BAJA CHPTL");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -197,7 +197,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 7));
     await initialize();
     await printText("MAYO");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -215,7 +215,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 7));
     await initialize();
     await printText("MVP PARM VINIG");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -233,7 +233,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 7));
     await initialize();
     await printText("BUFFALO");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -251,7 +251,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 7));
     await initialize();
     await printText("SRIRACHA");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -269,7 +269,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 5));
     await initialize();
     await printText("ONION");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -287,7 +287,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 5));
     await initialize();
     await printText("BELL PEPPER");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -305,7 +305,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 5));
     await initialize();
     await printText("TOMATO");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -323,7 +323,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 5));
     await initialize();
     await printText("CUCUMBER");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -341,7 +341,25 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 5));
     await initialize();
     await printText("LETTUCE");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
+    await printRowAndColumns(
+        column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
+    await printRowAndColumns(
+        column1: "Discard",
+        column2: DateFormat.yMd().add_jm().format(oneWeekLater));
+    await SunmiPrinter.lineWrap(2);
+    await printDate(DateFormat.EEEE().format(oneWeekLater));
+    await SunmiPrinter.lineWrap(6);
+    //await SunmiPrinter.cut();
+    await closePrinter();
+  }
+
+  Future<void> printReceiptForAvacado() async {
+    var now = DateTime.now();
+    var oneWeekLater = now.add(const Duration(days: 5));
+    await initialize();
+    await printText("AVACADO");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -359,7 +377,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 5));
     await initialize();
     await printText("BANNA PEPPER");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -377,7 +395,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 5));
     await initialize();
     await printText("PICKLES");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -395,7 +413,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 5));
     await initialize();
     await printText("OLIVES");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -413,7 +431,7 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 5));
     await initialize();
     await printText("JALOPENO");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
@@ -431,13 +449,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 5));
     await initialize();
     await printText("SPINICH");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -449,13 +467,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("BACON");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -467,13 +485,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("CAPICOLA");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -485,13 +503,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("CKN STRIP");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -503,13 +521,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("ROTIS CKN");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -521,13 +539,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("COLD CUT");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -539,13 +557,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("EGGS");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -557,13 +575,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("HAM");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -575,13 +593,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("MEATBALLS");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -593,13 +611,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("PEPPERONI");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -611,13 +629,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("RST BEEF");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -629,13 +647,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("SALAMI");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -647,13 +665,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("STEAK");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -665,13 +683,13 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("TUNA");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
     //await SunmiPrinter.cut();
@@ -683,15 +701,120 @@ class Sunmi {
     var oneWeekLater = now.add(const Duration(days: 3));
     await initialize();
     await printText("TURKEY");
-    await printRowAndColumns(column1: "Employee", column2: "Brooke Ingram");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
     await printRowAndColumns(
         column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
     await printRowAndColumns(
         column1: "Discard",
         column2: DateFormat.yMd().add_jm().format(oneWeekLater));
-    await SunmiPrinter.lineWrap(1);
+    await SunmiPrinter.lineWrap(2);
     await printDate(DateFormat.EEEE().format(oneWeekLater));
     await SunmiPrinter.lineWrap(6);
+    //await SunmiPrinter.cut();
+    await closePrinter();
+  }
+
+  Future<void> printReceiptForPizza() async {
+    var now = DateTime.now();
+    var discardTime = now.add(const Duration(days: 5));
+    var readyTime = now.add(const Duration(days: 1));
+    await initialize();
+    await printText("PIZZA");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
+    await printRowAndColumns(
+        column1: "Thawed", column2: DateFormat.yMd().add_jm().format(now));
+    await printRowAndColumns(
+        column1: "Ready", column2: DateFormat.yMd().add_jm().format(readyTime));
+    await printRowAndColumns(
+        column1: "Discard",
+        column2: DateFormat.yMd().add_jm().format(discardTime));
+    await SunmiPrinter.lineWrap(2);
+    await printDate(DateFormat.EEEE().format(discardTime));
+    await SunmiPrinter.lineWrap(5);
+    //await SunmiPrinter.cut();
+    await closePrinter();
+  }
+
+  Future<void> printReceiptForWrap() async {
+    var now = DateTime.now();
+    var discardTime = now.add(const Duration(days: 5));
+    var readyTime = now.add(const Duration(days: 1));
+    await initialize();
+    await printText("WRAP");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
+    await printRowAndColumns(
+        column1: "Thawed", column2: DateFormat.yMd().add_jm().format(now));
+    await printRowAndColumns(
+        column1: "Ready", column2: DateFormat.yMd().add_jm().format(readyTime));
+    await printRowAndColumns(
+        column1: "Discard",
+        column2: DateFormat.yMd().add_jm().format(discardTime));
+    await SunmiPrinter.lineWrap(2);
+    await printDate(DateFormat.EEEE().format(discardTime));
+    await SunmiPrinter.lineWrap(5);
+    //await SunmiPrinter.cut();
+    await closePrinter();
+  }
+
+  Future<void> printReceiptForChurro() async {
+    var now = DateTime.now();
+    var discardTime = now.add(const Duration(days: 2));
+    var readyTime = now.add(const Duration(hours: 2));
+    await initialize();
+    await printText("CHURRO");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
+    await printRowAndColumns(
+        column1: "Thawed", column2: DateFormat.yMd().add_jm().format(now));
+    await printRowAndColumns(
+        column1: "Ready", column2: DateFormat.yMd().add_jm().format(readyTime));
+    await printRowAndColumns(
+        column1: "Discard",
+        column2: DateFormat.yMd().add_jm().format(discardTime));
+    await SunmiPrinter.lineWrap(2);
+    await printDate(DateFormat.EEEE().format(discardTime));
+    await SunmiPrinter.lineWrap(5);
+    //await SunmiPrinter.cut();
+    await closePrinter();
+  }
+
+  Future<void> printReceiptForPretzel() async {
+    var now = DateTime.now();
+    var discardTime = now.add(const Duration(days: 2));
+    var readyTime = now.add(const Duration(hours: 2));
+    await initialize();
+    await printText("PRETZEL");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
+    await printRowAndColumns(
+        column1: "Thawed", column2: DateFormat.yMd().add_jm().format(now));
+    await printRowAndColumns(
+        column1: "Ready", column2: DateFormat.yMd().add_jm().format(readyTime));
+    await printRowAndColumns(
+        column1: "Discard",
+        column2: DateFormat.yMd().add_jm().format(discardTime));
+    await SunmiPrinter.lineWrap(2);
+    await printDate(DateFormat.EEEE().format(discardTime));
+    await SunmiPrinter.lineWrap(5);
+    //await SunmiPrinter.cut();
+    await closePrinter();
+  }
+
+  Future<void> printReceiptForCookie() async {
+    var now = DateTime.now();
+    var discardTime = now.add(const Duration(days: 7));
+    var readyTime = now.add(const Duration(hours: 4));
+    await initialize();
+    await printText("COOKIE");
+    await printRowAndColumns(column1: "Employee", column2: "Jay");
+    await printRowAndColumns(
+        column1: "Thawed", column2: DateFormat.yMd().add_jm().format(now));
+    await printRowAndColumns(
+        column1: "Ready", column2: DateFormat.yMd().add_jm().format(readyTime));
+    await printRowAndColumns(
+        column1: "Discard",
+        column2: DateFormat.yMd().add_jm().format(discardTime));
+    await SunmiPrinter.lineWrap(2);
+    await printDate(DateFormat.EEEE().format(discardTime));
+    await SunmiPrinter.lineWrap(5);
     //await SunmiPrinter.cut();
     await closePrinter();
   }

@@ -1,26 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:sunmi/sunmi.dart';
 
-class VeggieScreen extends StatefulWidget {
-  const VeggieScreen({Key? key}) : super(key: key);
+class BreadScreen extends StatefulWidget {
+  const BreadScreen({Key? key}) : super(key: key);
 
   @override
-  State<VeggieScreen> createState() => _VeggieScreenState();
+  State<BreadScreen> createState() => _BreadScreenState();
 }
 
-class _VeggieScreenState extends State<VeggieScreen> {
+class _BreadScreenState extends State<BreadScreen> {
   List<String> buttonNames = [
-    'ONION',
-    'BELL PPR',
-    'TOMATO',
-    'CUCUMBER',
-    'LETTUCE',
-    'BNA PPR',
-    'PICKLES',
-    'OLIVES',
-    'JALOPENO',
-    'SPINICH',
-    'AVACADO'
+    'WRAP',
+    'PIZZA',
+    'CHURRO',
+    'COOKIE',
+    'PRETZEL',
   ];
 
   @override
@@ -39,8 +33,6 @@ class _VeggieScreenState extends State<VeggieScreen> {
             ),
             buildButtonRow(0),
             buildButtonRow(3),
-            buildButtonRow(6),
-            buildButtonRow(9),
           ],
         ),
       ),
@@ -81,28 +73,16 @@ class _VeggieScreenState extends State<VeggieScreen> {
     Sunmi printer = Sunmi();
 
     // Customize actions based on the button name
-    if (buttonName == 'ONION') {
-      printer.printReceiptForONION();
-    } else if (buttonName == 'BELL PPR') {
-      printer.printReceiptForBELLPPR();
-    } else if (buttonName == 'TOMATO') {
-      printer.printReceiptForTOMATO();
-    } else if (buttonName == 'CUCUMBER') {
-      printer.printReceiptForCUCUMBER();
-    } else if (buttonName == 'LETTUCE') {
-      printer.printReceiptForLETTUCE();
-    } else if (buttonName == 'BNA PPR') {
-      printer.printReceiptForBNAPPR();
-    } else if (buttonName == 'PICKLES') {
-      printer.printReceiptForPICKLES();
-    } else if (buttonName == 'OLIVES') {
-      printer.printReceiptForOLIVES();
-    } else if (buttonName == 'JALOPENO') {
-      printer.printReceiptForJALOPENO();
-    } else if (buttonName == 'SPINICH') {
-      printer.printReceiptForSPINICH();
-    } else if (buttonName == 'AVACADO') {
-      printer.printReceiptForAvacado();
+    if (buttonName == 'WRAP') {
+      printer.printReceiptForWrap();
+    } else if (buttonName == 'PIZZA') {
+      printer.printReceiptForPizza();
+    } else if (buttonName == 'CHURRO') {
+      printer.printReceiptForChurro();
+    } else if (buttonName == 'PRETZEL') {
+      printer.printReceiptForPretzel();
+    } else if (buttonName == 'COOKIE') {
+      printer.printReceiptForCookie();
     }
     // Add more conditions as needed for other buttonsr
   }
