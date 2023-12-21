@@ -2,8 +2,8 @@
 
 
 ## Demo
-![Receipt](https://github.com/Brian1011/sunmi_flutter_printer/blob/main/assets/receipt.jpg)
-![Receipt](https://github.com/Brian1011/sunmi_flutter_printer/blob/main/assets/sunmi_printing_on_app.jpg)
+![Receipt](https://github.com/dpatel4603/subway_label_printing/blob/main/assets/label_1.jpg)
+![Receipt](https://github.com/dpatel4603/subway_label_printing/blob/main/assets/label_2.jpg)
 
 
 ## About
