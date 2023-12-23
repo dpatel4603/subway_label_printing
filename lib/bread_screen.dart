@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:sunmi/sunmi.dart';
+import 'package:sunmi/main.dart';
 
 class BreadScreen extends StatefulWidget {
-  const BreadScreen({Key? key}) : super(key: key);
-
+  final String employeeName;
+  const BreadScreen({Key? key, required this.employeeName}) : super(key: key);
   @override
-  State<BreadScreen> createState() => _BreadScreenState();
+  // ignore: no_logic_in_create_state
+  State<BreadScreen> createState() =>
+      // ignore: no_logic_in_create_state
+      _BreadScreenState(employeeName: employeeName);
 }
 
 class _BreadScreenState extends State<BreadScreen> {
+  final String employeeName;
+
+  _BreadScreenState({required this.employeeName});
   List<String> buttonNames = [
     'WRAP',
     'PIZZA',
@@ -70,7 +76,7 @@ class _BreadScreenState extends State<BreadScreen> {
   }
 
   void handleButtonPress(String buttonName) {
-    Sunmi printer = Sunmi();
+    Sunmi printer = Sunmi(employeeName: employeeName);
 
     // Customize actions based on the button name
     if (buttonName == 'WRAP') {

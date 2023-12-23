@@ -1,33 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:sunmi/main.dart';
 
-class VeggieScreen extends StatefulWidget {
+class CheeseScreen extends StatefulWidget {
   final String employeeName;
-  const VeggieScreen({Key? key, required this.employeeName}) : super(key: key);
-
+  const CheeseScreen({Key? key, required this.employeeName}) : super(key: key);
   @override
-  State<VeggieScreen> createState() =>
+  // ignore: no_logic_in_create_state
+  State<CheeseScreen> createState() =>
       // ignore: no_logic_in_create_state
-      _VeggieScreenState(employeeName: employeeName);
+      _CheeseScreenState(employeeName: employeeName);
 }
 
-class _VeggieScreenState extends State<VeggieScreen> {
+class _CheeseScreenState extends State<CheeseScreen> {
   final String employeeName;
 
-  _VeggieScreenState({required this.employeeName});
-
+  _CheeseScreenState({required this.employeeName});
   List<String> buttonNames = [
-    'ONION',
-    'BELL PPR',
-    'TOMATO',
-    'CUCUMBER',
-    'LETTUCE',
-    'BNA PPR',
-    'PICKLES',
-    'OLIVES',
-    'JALOPENO',
-    'SPINICH',
-    'AVACADO'
+    'AMER',
+    'MOZZ',
+    'MONT JACK',
+    'PPR JACK',
+    'PROVOLONE',
   ];
 
   @override
@@ -46,8 +39,6 @@ class _VeggieScreenState extends State<VeggieScreen> {
             ),
             buildButtonRow(0),
             buildButtonRow(3),
-            buildButtonRow(6),
-            buildButtonRow(9),
           ],
         ),
       ),
@@ -88,28 +79,16 @@ class _VeggieScreenState extends State<VeggieScreen> {
     Sunmi printer = Sunmi(employeeName: employeeName);
 
     // Customize actions based on the button name
-    if (buttonName == 'ONION') {
-      printer.printReceiptForONION();
-    } else if (buttonName == 'BELL PPR') {
-      printer.printReceiptForBELLPPR();
-    } else if (buttonName == 'TOMATO') {
-      printer.printReceiptForTOMATO();
-    } else if (buttonName == 'CUCUMBER') {
-      printer.printReceiptForCUCUMBER();
-    } else if (buttonName == 'LETTUCE') {
-      printer.printReceiptForLETTUCE();
-    } else if (buttonName == 'BNA PPR') {
-      printer.printReceiptForBNAPPR();
-    } else if (buttonName == 'PICKLES') {
-      printer.printReceiptForPICKLES();
-    } else if (buttonName == 'OLIVES') {
-      printer.printReceiptForOLIVES();
-    } else if (buttonName == 'JALOPENO') {
-      printer.printReceiptForJALOPENO();
-    } else if (buttonName == 'SPINICH') {
-      printer.printReceiptForSPINICH();
-    } else if (buttonName == 'AVACADO') {
-      printer.printReceiptForAvacado();
+    if (buttonName == 'AMER') {
+      printer.printReceiptForAMERICAN();
+    } else if (buttonName == 'MOZZ') {
+      printer.printReceiptForMoZ();
+    } else if (buttonName == 'PROVOLONE') {
+      printer.printReceiptForProvolone();
+    } else if (buttonName == 'MONT JACK') {
+      printer.printReceiptForMonteryJack();
+    } else if (buttonName == 'PPR JACK') {
+      printer.printReceiptForPEPPERJACK();
     }
     // Add more conditions as needed for other buttonsr
   }
