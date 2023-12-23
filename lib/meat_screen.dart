@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:sunmi/sunmi.dart';
+import 'package:sunmi/main.dart';
 
 class MeatScreen extends StatefulWidget {
-  const MeatScreen({Key? key}) : super(key: key);
+  final String employeeName;
+  const MeatScreen({Key? key, required this.employeeName}) : super(key: key);
 
   @override
-  State<MeatScreen> createState() => _SunmiScreenState();
+  // ignore: no_logic_in_create_state
+  State<MeatScreen> createState() =>
+      _MeatScreenState(employeeName: employeeName);
 }
 
-class _SunmiScreenState extends State<MeatScreen> {
+class _MeatScreenState extends State<MeatScreen> {
+  final String employeeName;
+
+  _MeatScreenState({required this.employeeName});
+
   List<String> buttonNames = [
     'BACON',
     'CAPICOLA',
@@ -82,7 +89,7 @@ class _SunmiScreenState extends State<MeatScreen> {
   }
 
   void handleButtonPress(String buttonName) {
-    Sunmi printer = Sunmi();
+    Sunmi printer = Sunmi(employeeName: employeeName);
 
     // Customize actions based on the button name
     if (buttonName == 'BACON') {

@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:sunmi/sunmi.dart';
+import 'package:sunmi/main.dart';
 
 class SauceScreen extends StatefulWidget {
-  const SauceScreen({Key? key}) : super(key: key);
+  final String employeeName;
+  const SauceScreen({Key? key, required this.employeeName}) : super(key: key);
 
   @override
-  State<SauceScreen> createState() => _SunmiScreenState();
+  // ignore: no_logic_in_create_state
+  State<SauceScreen> createState() =>
+      _SunmiScreenState(employeeName: employeeName);
 }
 
 class _SunmiScreenState extends State<SauceScreen> {
+  final String employeeName;
+
+  _SunmiScreenState({required this.employeeName});
+
   List<String> buttonNames = [
     'GRLC AOLI',
     'PPRC RNCH',
@@ -78,7 +85,7 @@ class _SunmiScreenState extends State<SauceScreen> {
   }
 
   void handleButtonPress(String buttonName) {
-    Sunmi printer = Sunmi();
+    Sunmi printer = Sunmi(employeeName: employeeName);
 
     // Customize actions based on the button name
     if (buttonName == 'GRLC AOLI') {
