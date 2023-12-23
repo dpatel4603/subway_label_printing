@@ -2,11 +2,13 @@
 
 
 ## Demo
-![Receipt](https://github.com/dpatel4603/subway_label_printing/blob/main/assets/label_1.jpg)
-![Receipt](https://github.com/dpatel4603/subway_label_printing/blob/main/assets/label_2.jpg)
+![Receipt](https://github.com/dpatel4603/subway_label_printing/blob/main/assets/label_6.jpg)
+![Receipt](https://github.com/dpatel4603/subway_label_printing/blob/main/assets/label_7.jpg)
 ![Receipt](https://github.com/dpatel4603/subway_label_printing/blob/main/assets/label_3.jpg)
 ![Receipt](https://github.com/dpatel4603/subway_label_printing/blob/main/assets/label_4.jpg)
 ![Receipt](https://github.com/dpatel4603/subway_label_printing/blob/main/assets/label_5.jpg)
+![Receipt](https://github.com/dpatel4603/subway_label_printing/blob/main/assets/label_1.jpg)
+![Receipt](https://github.com/dpatel4603/subway_label_printing/blob/main/assets/label_8.jpg)
 
 
 
