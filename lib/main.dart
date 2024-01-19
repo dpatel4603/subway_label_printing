@@ -4,6 +4,7 @@ import 'package:sunmi/sauce_screen.dart';
 import 'package:sunmi/veggie_screen.dart';
 import 'package:sunmi/meat_screen.dart';
 import 'package:sunmi/bread_screen.dart';
+import 'package:sunmi/hotstuff_screen.dart';
 import 'package:sunmi_printer_plus/column_maker.dart';
 import 'package:sunmi_printer_plus/enums.dart';
 import 'package:sunmi_printer_plus/sunmi_printer_plus.dart';
@@ -89,6 +90,18 @@ class SunmiScreenHome extends StatelessWidget {
               },
               child: const Text('Cheese'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        SixthScreen(employeeName: nameController.text),
+                  ),
+                );
+              },
+              child: const Text('Hot Stuff'),
+            ),
           ],
         ),
       ),
@@ -104,6 +117,7 @@ class FirstScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Subway Sauces Screen',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
@@ -120,6 +134,7 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Subway Veggie Screen',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
@@ -136,6 +151,7 @@ class ThirdScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Subway Meat Screen',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
@@ -152,6 +168,7 @@ class FourthScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Subway Bread Screen',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
@@ -168,10 +185,28 @@ class FifthScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Subway Cheeses Screen',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
       home: CheeseScreen(employeeName: employeeName),
+    );
+  }
+}
+
+class SixthScreen extends StatelessWidget {
+  final String employeeName;
+  const SixthScreen({Key? key, required this.employeeName}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Subway Hot Stuff Screen',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
+      home: HotStuffScreen(employeeName: employeeName),
     );
   }
 }
@@ -688,6 +723,24 @@ class Sunmi {
     await closePrinter();
   }
 
+  Future<void> printReceiptForCKNTERY() async {
+    var now = DateTime.now();
+    var discardDate = now.add(const Duration(days: 3));
+    await initialize();
+    await printText("CHICKEN TERYAKI");
+    await printRowAndColumns(column1: "Employee", column2: employeeName);
+    await printRowAndColumns(
+        column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
+    await printRowAndColumns(
+        column1: "Discard",
+        column2: DateFormat.yMd().add_jm().format(discardDate));
+    await SunmiPrinter.lineWrap(2);
+    await printDate(DateFormat.EEEE().format(discardDate));
+    await SunmiPrinter.lineWrap(6);
+    //await SunmiPrinter.cut();
+    await closePrinter();
+  }
+
   Future<void> printReceiptForCKNROTIS() async {
     var now = DateTime.now();
     var discardDate = now.add(const Duration(days: 3));
@@ -868,6 +921,60 @@ class Sunmi {
     await closePrinter();
   }
 
+  Future<void> printReceiptForBrocCheese() async {
+    var now = DateTime.now();
+    var discardDate = now.add(const Duration(hours: 4));
+    await initialize();
+    await printText("BROC & CHEESE NDLS");
+    await printRowAndColumns(column1: "Employee", column2: employeeName);
+    await printRowAndColumns(
+        column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
+    await printRowAndColumns(
+        column1: "Discard",
+        column2: DateFormat.yMd().add_jm().format(discardDate));
+    await SunmiPrinter.lineWrap(2);
+    await printDate(DateFormat.EEEE().format(discardDate));
+    await SunmiPrinter.lineWrap(6);
+    //await SunmiPrinter.cut();
+    await closePrinter();
+  }
+
+  Future<void> printReceiptForChickenNoodles() async {
+    var now = DateTime.now();
+    var discardDate = now.add(const Duration(hours: 4));
+    await initialize();
+    await printText("CKN NOODLE");
+    await printRowAndColumns(column1: "Employee", column2: employeeName);
+    await printRowAndColumns(
+        column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
+    await printRowAndColumns(
+        column1: "Discard",
+        column2: DateFormat.yMd().add_jm().format(discardDate));
+    await SunmiPrinter.lineWrap(2);
+    await printDate(DateFormat.EEEE().format(discardDate));
+    await SunmiPrinter.lineWrap(6);
+    //await SunmiPrinter.cut();
+    await closePrinter();
+  }
+
+  Future<void> printReceiptForMeatBalls() async {
+    var now = DateTime.now();
+    var discardDate = now.add(const Duration(hours: 4));
+    await initialize();
+    await printText("MEATBALLS");
+    await printRowAndColumns(column1: "Employee", column2: employeeName);
+    await printRowAndColumns(
+        column1: "Prepped", column2: DateFormat.yMd().add_jm().format(now));
+    await printRowAndColumns(
+        column1: "Discard",
+        column2: DateFormat.yMd().add_jm().format(discardDate));
+    await SunmiPrinter.lineWrap(2);
+    await printDate(DateFormat.EEEE().format(discardDate));
+    await SunmiPrinter.lineWrap(6);
+    //await SunmiPrinter.cut();
+    await closePrinter();
+  }
+
   Future<void> printReceiptForTurkey() async {
     var now = DateTime.now();
     var discardDate = now.add(const Duration(days: 3));
@@ -934,6 +1041,27 @@ class Sunmi {
     var readyTime = now.add(const Duration(hours: 2));
     await initialize();
     await printText("CHURRO");
+    await printRowAndColumns(column1: "Employee", column2: employeeName);
+    await printRowAndColumns(
+        column1: "Thawed", column2: DateFormat.yMd().add_jm().format(now));
+    await printRowAndColumns(
+        column1: "Ready", column2: DateFormat.yMd().add_jm().format(readyTime));
+    await printRowAndColumns(
+        column1: "Discard",
+        column2: DateFormat.yMd().add_jm().format(discardTime));
+    await SunmiPrinter.lineWrap(2);
+    await printDate(DateFormat.EEEE().format(discardTime));
+    await SunmiPrinter.lineWrap(5);
+    //await SunmiPrinter.cut();
+    await closePrinter();
+  }
+
+  Future<void> printReceiptForFlatbread() async {
+    var now = DateTime.now();
+    var discardTime = now.add(const Duration(days: 5));
+    var readyTime = now.add(const Duration(days: 1));
+    await initialize();
+    await printText("FLATBREAD");
     await printRowAndColumns(column1: "Employee", column2: employeeName);
     await printRowAndColumns(
         column1: "Thawed", column2: DateFormat.yMd().add_jm().format(now));
@@ -1093,6 +1221,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Sunmi Flutter',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),

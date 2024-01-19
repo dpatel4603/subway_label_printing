@@ -8,6 +8,7 @@ class MeatScreen extends StatefulWidget {
   @override
   // ignore: no_logic_in_create_state
   State<MeatScreen> createState() =>
+      // ignore: no_logic_in_create_state
       _MeatScreenState(employeeName: employeeName);
 }
 
@@ -21,7 +22,8 @@ class _MeatScreenState extends State<MeatScreen> {
     'CAPICOLA',
     'CKN STRPS',
     'CKN ROTIS',
-    'COLD CUT',
+    'CKN TERYK'
+        'COLD CUT',
     'EGGS',
     'HAM',
     'MEATBALLS',
@@ -120,6 +122,8 @@ class _MeatScreenState extends State<MeatScreen> {
       printer.printReceiptForTuna();
     } else if (buttonName == 'TURKEY') {
       printer.printReceiptForTurkey();
+    } else if (buttonName == 'CKN TERYK') {
+      printer.printReceiptForCKNTERY();
     }
     // Add more conditions as needed for other buttons
   }

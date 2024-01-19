@@ -1,27 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:sunmi/main.dart';
 
-class BreadScreen extends StatefulWidget {
+class HotStuffScreen extends StatefulWidget {
   final String employeeName;
-  const BreadScreen({Key? key, required this.employeeName}) : super(key: key);
+  const HotStuffScreen({Key? key, required this.employeeName})
+      : super(key: key);
   @override
   // ignore: no_logic_in_create_state
-  State<BreadScreen> createState() =>
+  State<HotStuffScreen> createState() =>
       // ignore: no_logic_in_create_state
-      _BreadScreenState(employeeName: employeeName);
+      _HotStuffScreenState(employeeName: employeeName);
 }
 
-class _BreadScreenState extends State<BreadScreen> {
+class _HotStuffScreenState extends State<HotStuffScreen> {
   final String employeeName;
 
-  _BreadScreenState({required this.employeeName});
+  _HotStuffScreenState({required this.employeeName});
   List<String> buttonNames = [
-    'WRAP',
-    'PIZZA',
-    'CHURRO',
-    'COOKIE',
-    'PRETZEL',
-    'FLATBREAD',
+    'BRC CHE',
+    'CKN NDLS',
+    'MEAT BALLS',
   ];
 
   @override
@@ -39,7 +37,6 @@ class _BreadScreenState extends State<BreadScreen> {
               height: 10,
             ),
             buildButtonRow(0),
-            buildButtonRow(3),
           ],
         ),
       ),
@@ -78,20 +75,13 @@ class _BreadScreenState extends State<BreadScreen> {
 
   void handleButtonPress(String buttonName) {
     Sunmi printer = Sunmi(employeeName: employeeName);
-
     // Customize actions based on the button name
-    if (buttonName == 'WRAP') {
-      printer.printReceiptForWrap();
-    } else if (buttonName == 'PIZZA') {
-      printer.printReceiptForPizza();
-    } else if (buttonName == 'CHURRO') {
-      printer.printReceiptForChurro();
-    } else if (buttonName == 'PRETZEL') {
-      printer.printReceiptForPretzel();
-    } else if (buttonName == 'COOKIE') {
-      printer.printReceiptForCookie();
-    } else if (buttonName == 'FLATBREAD') {
-      printer.printReceiptForFlatbread();
+    if (buttonName == 'BRC CHE') {
+      printer.printReceiptForBrocCheese();
+    } else if (buttonName == 'CKN NDLS') {
+      printer.printReceiptForChickenNoodles();
+    } else if (buttonName == 'MEAT BALLS') {
+      printer.printReceiptForMeatBalls();
     }
     // Add more conditions as needed for other buttonsr
   }
