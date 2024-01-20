@@ -1,11 +1,10 @@
-import 'package:flutter/services.dart';
+import 'package:intl/intl.dart'; // for date format
+import 'package:sunmi_cloud_printer/sunmi_cloud_printer.dart';
 import 'package:sunmi_printer_plus/column_maker.dart';
 import 'package:sunmi_printer_plus/enums.dart';
 import 'package:sunmi_printer_plus/sunmi_printer_plus.dart';
 import 'package:sunmi_printer_plus/sunmi_style.dart';
-import 'package:intl/intl.dart'; // for date format
 // for other locales
-import 'main.dart';
 
 class Sunmi {
   // initialize sunmi printer
@@ -13,6 +12,10 @@ class Sunmi {
     await SunmiPrinter.bindingPrinter();
     await SunmiPrinter.initPrinter();
     await SunmiPrinter.setAlignment(SunmiPrintAlign.LEFT);
+
+    // Connect to Cloud Printer
+    await SunmiCloudPrinter.setNetPrinter("192.168.0.81");
+    await SunmiCloudPrinter.connect();
   }
 
   // print text passed as parameter

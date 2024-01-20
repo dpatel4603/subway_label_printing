@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:sunmi/bread_screen.dart';
 import 'package:sunmi/cheese_screen.dart';
+import 'package:sunmi/hotstuff_screen.dart';
+import 'package:sunmi/meat_screen.dart';
 import 'package:sunmi/sauce_screen.dart';
 import 'package:sunmi/veggie_screen.dart';
-import 'package:sunmi/meat_screen.dart';
-import 'package:sunmi/bread_screen.dart';
-import 'package:sunmi/hotstuff_screen.dart';
+import 'package:sunmi_cloud_printer/column_maker.dart'
+    as sunmi_cloud_columnmaker;
+import 'package:sunmi_cloud_printer/enums.dart' as sunmi_cloud_enums;
+import 'package:sunmi_cloud_printer/sunmi_cloud_printer.dart';
+import 'package:sunmi_cloud_printer/sunmi_style.dart' as sunmi_cloud_style;
 import 'package:sunmi_printer_plus/column_maker.dart';
 import 'package:sunmi_printer_plus/enums.dart';
 import 'package:sunmi_printer_plus/sunmi_printer_plus.dart';
 import 'package:sunmi_printer_plus/sunmi_style.dart';
-import 'package:intl/intl.dart';
 
 class SunmiScreenHome extends StatelessWidget {
   SunmiScreenHome({Key? key}) : super(key: key);
@@ -27,7 +32,7 @@ class SunmiScreenHome extends StatelessWidget {
           children: <Widget>[
             TextField(
               controller: nameController,
-              decoration: InputDecoration(labelText: 'Enter Name'),
+              decoration: const InputDecoration(labelText: 'Enter Name'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
@@ -220,6 +225,10 @@ class Sunmi {
     await SunmiPrinter.bindingPrinter();
     await SunmiPrinter.initPrinter();
     await SunmiPrinter.setAlignment(SunmiPrintAlign.LEFT);
+
+    // Connect to Cloud Printer
+    await SunmiCloudPrinter.setNetPrinter("192.168.0.81");
+    await SunmiCloudPrinter.connect();
   }
 
   // print text passed as parameter
@@ -230,15 +239,25 @@ class Sunmi {
           bold: true,
           align: SunmiPrintAlign.LEFT,
         ));
+
+    await SunmiCloudPrinter.printText(text);
   }
 
   Future<void> printDate(String text) async {
+    var cloudStyle = sunmi_cloud_style.SunmiStyle(
+      fontSize: sunmi_cloud_enums.SunmiFontSize.LG,
+      bold: true,
+      align: sunmi_cloud_enums.SunmiPrintAlign.LEFT,
+    );
+
     await SunmiPrinter.printText(text,
         style: SunmiStyle(
           fontSize: SunmiFontSize.LG,
           bold: true,
           align: SunmiPrintAlign.LEFT,
         ));
+
+    await SunmiCloudPrinter.printText(text, style: cloudStyle);
   }
 
   // print row and 2 columns
@@ -248,6 +267,8 @@ class Sunmi {
 
     // set alignment center
     await SunmiPrinter.setAlignment(SunmiPrintAlign.CENTER);
+    await SunmiCloudPrinter.setAlignment(
+        sunmi_cloud_enums.SunmiPrintAlign.CENTER);
 
     // prints a row with 3 columns
     // total width of columns should be 30
@@ -264,6 +285,19 @@ class Sunmi {
       ),
     ]);
     // creates one line space
+
+    await SunmiCloudPrinter.printRow(cols: [
+      sunmi_cloud_columnmaker.ColumnMaker(
+        text: "$column1",
+        width: 10,
+        align: sunmi_cloud_enums.SunmiPrintAlign.LEFT,
+      ),
+      sunmi_cloud_columnmaker.ColumnMaker(
+        text: "$column2",
+        width: 23,
+        align: sunmi_cloud_enums.SunmiPrintAlign.CENTER,
+      ),
+    ]);
   }
 
   /* its important to close the connection with the printer once you are done */
